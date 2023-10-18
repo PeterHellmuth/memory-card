@@ -21,7 +21,7 @@ function Card({index, onClick, name, image}){
 
     return(
         <div className={classList} onClick={() => onClick(index)}>
-            <img src={image}></img>
+            <img className="card-image" src={image}></img>
             <h3 className="card-name">{name}</h3>
         </div>
     )

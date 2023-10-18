@@ -52,6 +52,11 @@ body{
     transition-timing-function: ease-in-out;
     transition-property: transform;
     position: relative;
+    max-width: 39vw;
+}
+
+.card-image{
+    width: 100%;
 }
 
 .card.visible{
