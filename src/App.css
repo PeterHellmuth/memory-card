@@ -3,7 +3,6 @@ html{
 }
 body{
     margin: 0px;
-    padding: 50px;
 }
 
 .playing-game{
@@ -35,8 +34,8 @@ body{
 }
 
 .card-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
     gap: 10px;
 
 }
@@ -52,7 +51,7 @@ body{
     transition-timing-function: ease-in-out;
     transition-property: transform;
     position: relative;
-    max-width: 39vw;
+
 }
 
 .card-image{
@@ -69,7 +68,7 @@ body{
 }
 .card-name{
     position: absolute;
-    top: 90%;
+    top: 85%;
     transform: translateY(-100%);
  
   
@@ -78,4 +77,10 @@ body{
     text-shadow: 4px 2px 2px black;
  
     font-size: 30px;
+}
+
+@media (min-width: 800px){
+    body{
+        padding: 50px;
+    }
 }
