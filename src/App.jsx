@@ -50,7 +50,7 @@ function App() {
 
   return (
     <>
-      <h1>Welcome to the Rick and Morty memory game. Don&apos;t pick the same character twice!</h1>
+      <h1>Don&apos;t pick the same character twice!</h1>
       <h1>Current score: {pickedCards.length}</h1>
       <h1>Best score: {bestScore}</h1>
       <div className="card-container">

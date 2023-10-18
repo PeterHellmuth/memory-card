@@ -3,6 +3,10 @@ html{
 }
 body{
     margin: 0px;
+    padding: 5px;
+}
+h1{
+    margin: 0px;
 }
 
 .playing-game{
@@ -37,7 +41,6 @@ body{
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
     gap: 10px;
-
 }
 
 .card{
@@ -70,17 +73,22 @@ body{
     position: absolute;
     top: 85%;
     transform: translateY(-100%);
- 
-  
-   
     color: white;
     text-shadow: 4px 2px 2px black;
- 
     font-size: 30px;
 }
 
 @media (min-width: 800px){
     body{
         padding: 50px;
+    }
+}
+
+@media (max-width: 799px){
+    .card-container{
+    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+    }
+    .card-name{
+        font-size: 15px;
     }
 }
