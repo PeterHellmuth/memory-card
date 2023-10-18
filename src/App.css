@@ -26,7 +26,7 @@ body{
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     width: 310px;
-    height: 160px;
+    height: 175px;
     border-style: solid;
     background-color: red;
     color: white;
@@ -64,8 +64,13 @@ body{
 }
 .card-name{
     position: absolute;
-
-    color: black;
-    text-shadow: 2px 2px 5px white;
+    top: 90%;
+    transform: translateY(-100%);
+ 
+  
+   
+    color: white;
+    text-shadow: 4px 2px 2px black;
+ 
     font-size: 30px;
 }
