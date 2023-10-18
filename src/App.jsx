@@ -14,7 +14,7 @@ function App() {
       return response.json();
     }).then(function(response){
       let shuffledArr = shuffle(response.results);
-      setCurrentCards(shuffledArr.slice(0,9));
+      setCurrentCards(shuffledArr.slice(0,12));
     });
   }
 
